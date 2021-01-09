@@ -1,0 +1,9 @@
+
+###Excluye de la carpeta platziVideo
+PlatziVideo/node_modules/
+PlatziVideo/dist/
+hyper-Setup-3.0.2.lnk
+doctos/
+
+###excluye de la carpeta holamundo
+holamundo/node_modules/
