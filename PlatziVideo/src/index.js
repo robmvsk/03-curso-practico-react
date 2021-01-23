@@ -5,11 +5,13 @@ import ReactDOM from 'react-dom';
 
 //NO vamos a crear un Componente, sino que vamos a utilizar ReactDOM para pasarle este componente al navegador
 //que componente?, nuestro componente HelloWorld, para lo cual dbemos importarlo
-import HelloWorld from './components/HelloWorld';
+//import HelloWorld from './components/HelloWorld';
+
+import App from './containers/App';
 
 //render, recibe 2 parametros: uno es el componente, y otro es donde vamos a empujar ese componente (debe ser un elemento de HTML)
 //en getLementById, definimos a que elemento de html le pasamos el componente HelloWorld
-ReactDOM.render( <HelloWorld />, document.getElementById('app') );
+ReactDOM.render( <App />, document.getElementById('app') );
 
 //con esto ya tenemos nuestro archivo de entrada, con la configuracion completa
 

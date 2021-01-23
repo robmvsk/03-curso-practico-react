@@ -45,7 +45,19 @@ module.exports = {
                     'css-loader',
                     'sass-loader'
                 ]
-            }
+            },
+            //regla para el manejo de nuestros archivos multimedia, es decir los iconos
+            {
+                test: /\.(png|gif|jpg)$/,
+                use: [
+                  {
+                    loader: 'file-loader',
+                    //configuramos el nombre del archivo (en este caso tendra el nombre aleatorio del hash)
+                    //y que respete la extension que tiene el archivo o imagen
+                    options: { name: 'assets/[hash].[ext]' },
+                  }
+                ],
+            },
         ]
     },
     //añadimos los plugins que requerimos
